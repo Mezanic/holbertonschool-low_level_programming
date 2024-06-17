@@ -1,7 +1,11 @@
 #include <stdio.h>
-/* Let's start first programm in C */
+/**
+*main - put Programming is like building a multilingual puzzle
+*
+*Return:0
+*/
 int main(void)
-{ /* Print prograaming is like building a multilingual puzzle */
+{
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
