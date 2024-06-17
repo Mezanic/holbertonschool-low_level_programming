@@ -1,5 +1,4 @@
 #include <stdio.sh>
-/* Let's go first program in C */
 
 int main(void)
 {
