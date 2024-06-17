@@ -1,4 +1,4 @@
-#include <stdio.sh>
+#include <stdio.h>
 /* Let's start first programm in C */
 	int main(void)
 	{	
