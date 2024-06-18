@@ -13,9 +13,10 @@ int main(void)
 	{
 		putchar('0' + num);
 		if (num < 9)
-		putchar(44);
-		putchar(32);
-
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 
 	putchar('\n');
