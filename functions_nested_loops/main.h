@@ -1,1 +1,2 @@
-void _putchar(char [c], int) 
+int _putchar(char);
+
