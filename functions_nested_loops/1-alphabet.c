@@ -6,11 +6,9 @@
  * Return: 0
  */
 
-int main(void)
+print_alphabet(void)
 {
 	char alph;
-
-	print_alphabet();
 
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
