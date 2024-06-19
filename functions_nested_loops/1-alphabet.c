@@ -1,20 +1,21 @@
 #include"main.h"
 
 /**
- * main - hat prints the alphabet, in lowercase
+ * main - prints the alphabet, in lowercase
  *
  * Return: 0
  */
 
 int main(void)
 {
+	print_alphabet();
 	int alph;
 
-	for (alph = 'a'; alph <= 'z'; alph++)
+	for (alph = 'a'; alph <= 'Z'; alph++)
 	{
 		_putchar(alph);
-
 	}
+
 	_putchar('\n');
 	return (0);
 }
