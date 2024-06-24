@@ -11,11 +11,11 @@ void print_diagonal(int n)
 	int l, sp;
 
 
-	for (l = 1; l <= n; l++)
+	for (l = 0; l <= n; l++)
 	{
 		for (sp = 0; sp <= l; sp++)
 		{
-			if (sp == l)
+			if (sp == l && sp != 0)
 			{
 				_putchar(92);
 			}
