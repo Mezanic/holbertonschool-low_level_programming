@@ -10,22 +10,28 @@ void print_diagonal(int n)
 {
 	int l, sp;
 
-
-	for (l = 0; l <= n; l++)
+	if (n == 0)
 	{
-		for (sp = 0; sp <= l; sp++)
-		{
-			if (sp == l && sp != 0)
-			{
-				_putchar(92);
-			}
-			else
-			{
-				_putchar(' ');
-			}
-
-		}
 		_putchar('\n');
 	}
 
+	else
+	{
+		for (l = 1; l <= n; l++)
+		{	
+			for (sp = 1; sp <= l; sp++)
+			{
+				if ( sp == l)
+				{
+					_putchar(92);
+				}
+				else 
+				{
+					_putchar(' ');
+				}
+			}
+			_putchar('\n');
+		}
+	}
 }
+
