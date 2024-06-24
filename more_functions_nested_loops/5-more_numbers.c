@@ -9,7 +9,7 @@ void more_numbers(void)
 {
 	int i;
 
-	for (i = 0; i < 11; i++)
+	for (i = 0; i <= 10; i++)
 	{
 		int n;
 
@@ -21,7 +21,6 @@ void more_numbers(void)
 			}
 			_putchar((n % 10) + '0');
 		}
-		i++;
 		_putchar ('\n');
 	}
 }
