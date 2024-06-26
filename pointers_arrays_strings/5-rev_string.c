@@ -14,7 +14,7 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	
+
 
 	for (j = 0; j < i / 2; j++)
 	{
