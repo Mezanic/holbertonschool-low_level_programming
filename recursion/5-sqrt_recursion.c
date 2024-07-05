@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt - return natural square root
+ *  _sqrt_r - return natural square root
  * @n: we number ned to return natural square
  * @i: find the square
  *
