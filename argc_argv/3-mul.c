@@ -6,7 +6,7 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0 if two nulber , 1 If the program does not receive two arguments
+ * Return: 0 
  */
 
 int main(int argc, char *argv[])
