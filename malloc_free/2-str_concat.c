@@ -14,11 +14,15 @@ char *str_concat(char *s1, char *s2)
 	char *concatenates;
 
 	if (s1 == 0)
+	{
+		s1 = "";
 		return (NULL);
-
+	}
 	if (s2 == 0)
+	{
+		s2 = "";
 		return (NULL);
-
+	}
 	while (s1[i] != 0)
 		i++;
 
@@ -38,7 +42,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenates[h] = s2[j];
 	}
-	s1 = "";
-	s2 = "";
 	return (concatenates);
 }
