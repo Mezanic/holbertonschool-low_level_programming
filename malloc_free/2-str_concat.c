@@ -27,8 +27,8 @@ char *str_concat(char *s1, char *s2)
 
 	concatenates = malloc(sizeof(char) * (i + j) + 1);
 
-		if (concatenates == 0)
-			return (NULL);
+	if (concatenates == 0)
+		return (NULL);
 	for (h = 0; h < i; h++)
 	{
 		concatenates[h] = s1[h];
@@ -38,5 +38,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenates[h] = s2[j];
 	}
+	s1 = "";
+	s2 = "";
 	return (concatenates);
 }
