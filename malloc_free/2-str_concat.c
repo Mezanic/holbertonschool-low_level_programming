@@ -13,7 +13,10 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j = 0, h = 0;
 	char *concatenates;
 
-	if (s1 == 0 || s2 == 0)
+	if (s1 == 0)
+		return (NULL);
+	       
+	if (s2 == 0)
 		return (NULL);
 
 	while (s1[i] != 0)
