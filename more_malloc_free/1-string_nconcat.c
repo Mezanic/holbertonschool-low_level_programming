@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[j] != 0 && j < n)
 		j++;
 
-	concatenates = malloc(sizeof(char) * (i + n + 1));
+	concatenates = malloc(sizeof(char) * (i + n));
 
 	if (concatenates == 0)
 		return (NULL);
