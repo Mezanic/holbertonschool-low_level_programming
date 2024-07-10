@@ -13,13 +13,13 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i = 0;
-	int *n;
+	unsigned char  *n;
 	unsigned int arr_size = nmemb * size;
 
 		if (nmemb == 0 || size == 0)
 			return (NULL);
 
-	n = malloc(arr_size * sizeof(int));
+	n = malloc(arr_size);
 
 	if (n == NULL)
 		return (NULL);
