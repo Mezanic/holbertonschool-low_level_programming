@@ -3,7 +3,7 @@
 
 /**
  * struct dog - variable needed for identify dog
- * @name: is libellé 
+ * @name: is libellé
  * @owner: owner of dog
  * @age: time since the dog as spwan
  *
