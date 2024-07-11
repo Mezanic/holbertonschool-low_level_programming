@@ -1,5 +1,5 @@
-#ifndef dog
-#define dog
+#ifndef dog_H
+#define dog_H
 
 /**
  * struct dog - variable needed for identify dog
@@ -9,11 +9,11 @@
  *
  * Description: primary information of the dog
  */
+
 typedef struct dog
 {
 	char *name;
 	char *owner;
 	float age;
-	
 } dog;
 #endif
