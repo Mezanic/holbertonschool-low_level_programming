@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d", f(a, b));
+	printf("%i\n", f(a, b));
 	return (0);
 
 }
