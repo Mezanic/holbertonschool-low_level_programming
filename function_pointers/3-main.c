@@ -6,7 +6,8 @@
  * main - perform simple opération
  * @argc: argument count
  * @argv: listing all argument
- * Return: number
+ *
+ * Return: f
  */
 int main(int argc, char *argv[])
 {
@@ -21,15 +22,15 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (!op)
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	f = get_op_func(argv[2]);
+
+	if (f == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	f = get_op_func(argv[2]);
 
 	if ((*op == '/' || *op == '%') && b == 0)
 	{
