@@ -11,11 +11,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = 0, b = 0;
+	int a = 0, b = 0, i = 0;
 	char *op = argv[2];
 	int (*f)(int, int);
 
+	while (argv[i] != NULL )
+	{
+		i++;
 
+	}
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -26,7 +30,7 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	f = get_op_func(argv[2]);
 
-	if (f == NULL)
+	if (f == NULL || i != 1)
 	{
 		printf("Error\n");
 		exit(99);
