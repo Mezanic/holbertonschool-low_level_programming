@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sum_dlistint : function that return sum of all date in a linked list
+ * sum_dlistint - function that return sum of all date in a linked list
  * @head: poitner to the head of the double linked list
  *
  * Return: sum of all data or 0
