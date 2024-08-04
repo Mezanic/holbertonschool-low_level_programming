@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	file_des = open(filename, O_RDONLY)
+	file_des = open(filename, O_RDONLY);
 		if (file_des == -1)
 			return (0);
 
@@ -25,13 +25,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	file_buffer = malloc(sizeof(char) * letters);
 	if (file_buffer == NULL)
 	{
-		close(file);
+		close(file_des);
 		return (0);
 
 	}
 
-	file_r = read(files_des, file_buffer, letters);
-	if (r == -1)
+	file_r = read(file_des, file_buffer, letters);
+	if (file_r == -1)
 	{
 		close(file_des);
 		return (0);
@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bytes_count = write(STDOUT_FILENO, file_buffer, file_r);
 
 	close(file_des);
-	free(buffer);
+	free(file_buffer);
 	return (bytes_count);
 
 }
